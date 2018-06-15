@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: SketchAPI 5.1.316 <https://api.sketch.io/> -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" style="" sketchjs:metadata="eyJ0aXRsZSI6Ijg2MTA1ODlkLTA5YjAtNDczZi04MmUyLTczYTcwZTM5ZTljYyIsImRlc2NyaXB0aW9uIjoiTWFkZSB3aXRoIFNrZXRjaHBhZCAtIGh0dHBzOi8vc2tldGNoLmlvL3NrZXRjaHBhZCIsIm1ldGFkYXRhIjp7fSwiY2xpcFBhdGgiOnsiZW5hYmxlZCI6dHJ1ZSwic3R5bGUiOnsic3Ryb2tlU3R5bGUiOiJibGFjayIsImxpbmVXaWR0aCI6MX19LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjU0MSwiaGVpZ2h0IjozMTMsInBhZ2VzIjp7Imxlbmd0aCI6MSwiZGF0YSI6W3sid2lkdGgiOjU0MSwiaGVpZ2h0IjozMTN9XX19" width="541" height="313" viewBox="0 0 541 313" sketchjs:version="5.1.316">
+<defs>
+	<linearGradient x1="581.3776741499453" y1="101.74109297624042" x2="0" y2="479.6365811737048" id="dna_3746224119" gradientUnits="userSpaceOnUse">
+		<stop offset="0.169" style="stop-color:#f8bf66;"/>
+		<stop offset="0.583" style="stop-color:#f95c81;"/>
+		<stop offset="1" style="stop-color:#f95c81;"/>
+	</linearGradient>
+</defs>
+<g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(1,0,0,1,-154,-528)">
+	<path d="M0 0 L1680 0 1680 944 0 944 z" sketchjs:tool="rectangle" sketchjs:uid="1" style="fill: tranparent; fill-rule: nonzero; fill-opacity: 0; vector-effect: non-scaling-stroke;"/>
+	<path d="M290.69 290.69 L290.69 0 C394.54 0 490.51 55.4 542.43 145.34 594.36 235.28 594.36 346.09 542.43 436.03 z" sketchjs:tool="pie" transform="matrix(-0.5372660430841462,0.930572083803228,-0.930572083803228,-0.5372660430841462,850.7073497411354,414.0248069368124)" sketchjs:uid="2" style="fill: url(#dna_3746224119); fill-rule: nonzero; fill-opacity: 1; vector-effect: non-scaling-stroke;"/>
+</g>
+</svg>
