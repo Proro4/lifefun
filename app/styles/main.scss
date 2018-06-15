@@ -563,7 +563,8 @@ p{
   font-size: 12px;
   font-family: 'Roboto-Regular';
   color: #3c3c3c;
-  pointer-events:none;
+  pointer-events:none; 
+  opacity: 0.5;
  }
  .textUp{
     opacity: 0;
@@ -794,5 +795,8 @@ p{
   }
   .info-6 span{
     margin-bottom: 50px;
+  }
+  .copy{
+    display: none;
   }
 }

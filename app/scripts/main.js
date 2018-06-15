@@ -77,6 +77,7 @@ $(window).scroll(function(){
 			$('.butt.butt-tel').html('Telegram');
 			$('.butt.butt-fac').html('Facebook');
 		}
+	 var wrappHeight = $('.wrapper').height(); 
 	 $('.bck').css('height',wrappHeight);
 	})
 }) 
