@@ -59,6 +59,37 @@ p{
   text-align: center;
   color:#89969f;
 }
+.loaderArea {
+  background: white;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 100000;
+}
+.loader {
+  background: url("../images/logoload.svg")no-repeat center;
+  height: 150px;
+  width: 150px;
+  background-size: 150px;
+  animation: loader 1.5s infinite;
+}
+@keyframes loader{
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+  50%{
+    transform: rotate(360deg) scale(0.0);
+  }
+  100%{
+    transform: rotate(720deg) scale(1);
+  }
+}
 .butt{
   font-family: 'Roboto-Medium';
   text-transform: uppercase;
@@ -120,16 +151,25 @@ p{
     }
   }
 }
- .header{
-  padding-top: 277.3px;
+ .header{ 
   text-align: center;
+  height: 75%;
+
+ .squirrel_left{
+  position: absolute;
+  left: 250px !important;
+  bottom: 100px;
+    img{
+      height: 200px;
+    }
+  }
   &__logo{
     img{
-      height: 35px;
+      height: 70px;
     } 
   }
   &__squirrel{
-    margin-top: 45px;
+    margin-top: 25px;
     display: flex;
     align-items:center;
     justify-content:center;
@@ -153,14 +193,15 @@ p{
   }
   .butt{
     margin-bottom: 30px;
+    animation:puls 1.5s infinite;
   }
-  &__top{
-    position: fixed;
+  &__top{ 
     width: 100%;
     left: 0;
-    top: 27.3px;
+    top: 17.3px;
     z-index: 5;
     pointer-events:none;
+    display: flex;
   }
  }
  .hiddenOn{ 
@@ -205,19 +246,28 @@ p{
     position: relative;
     z-index: 1;
     &__img{ 
-      position: relative;
+      position: absolute;  
       height: 800px;
       width: 800px;
       display: flex; 
       justify-content:center;
       background: url('../images/svg/oval-1.svg')no-repeat;
       background-size: 800px; 
+      transition:1s all;
+      transform:translate3d(0,250px,0);
+       &.top-1{
+        transform:translate3d(0,-100%,0);
+        }
       img{
           width: 375px;
           height: 606px;
           margin-right: 75px;
           object-fit: contain;
           position: relative;
+          transition:2.5s all;
+        &.top-1{ 
+          transform:translate3d(0,200px,0);
+        } 
       }
     }
   }
@@ -229,13 +279,11 @@ p{
     }
   }
  }
- .info-2{
-  padding-bottom: 190px;
+ .info-2{ 
   h2{
     margin-bottom: 25px;
   }
-  &__circle{
-    margin-top: 50px;
+  &__circle{  
     padding-bottom: 150px;
     display: flex;
     align-items:center;
@@ -255,8 +303,8 @@ p{
     }
     &__1{
       position: relative;
-      width: 301px;
-      height: 452px;
+      width: 290px;
+      height: 439px;
       background: url('../images/svg/oval-half-1.svg');
       background-size:cover;
       transition:0.3s all;
@@ -276,7 +324,7 @@ p{
         box-shadow: 16px  0px 16px rgba(0, 0, 0, 0.12);
         opacity:0;
       }
-      &:hover{
+      &.active{
         &::before{
           opacity: 1;
         }
@@ -291,8 +339,8 @@ p{
     }
     &__2{
       position: relative;
-      width: 301px;
-      height: 452px;
+      width: 290px;
+      height: 439px;
       background: url('../images/svg/oval-half-2.svg');
       background-size:cover;
       transition:0.3s all;
@@ -301,7 +349,7 @@ p{
       img{
         height: 70px;
         width: 70px;
-      }
+      } 
       &:before{
         content: '';
         position: absolute;
@@ -312,7 +360,7 @@ p{
         box-shadow: -16px  0px 16px rgba(0, 0, 0, 0.12);
         opacity:0;
       }
-      &:hover{
+      &.active {
         &::before{
           opacity: 1;
         }
@@ -326,12 +374,12 @@ p{
       }
     }
     &__3{
-      width: 518.1px;
-      height: 300px;
+      width: 502px;
+      height: 291px;
       background: url('../images/svg/oval-half-3.svg');
       background-size:cover;
       position: absolute;
-      top: 301px;
+      top: 292px;
       transition:0.3s all;
       text-align: center;
       padding-top: 110px;
@@ -340,17 +388,34 @@ p{
         height: 70px;
         width: 70px;
       }
-      &:hover{
+      &.active {
         padding-top: 70px; 
         transform:scale(1.1); 
         z-index: 2;
         p{
           height: 100%;
           animation: opettext 0.3s 1;
-          padding: 0 35px;
+          padding: 0 50px;
         }
       }
     }
+  }
+ }
+ @keyframes puls{
+  0%{
+    transform:scale(1);
+  }
+  45%{
+    transform:scale(1.03);
+  }
+  50%{
+    transform:scale(1.00);
+  }
+  65%{
+    transform:scale(1.01);
+  }
+  100%{
+    transform:scale(1.00);
   }
  }
  @keyframes opettext{
@@ -371,7 +436,7 @@ p{
     margin-top: 22px;
     img{
       width: 398.5px;
-      height: 300px;
+      height: 240px;
       object-fit: contain;
     }
   }
@@ -398,8 +463,7 @@ p{
  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
   background: $blue;
  }
- .info-4{
-  margin-top: 260px;
+ .info-4{ 
   text-align: center;
   h3{
     margin-bottom: 30px;
@@ -410,14 +474,14 @@ p{
   }
   &__img{
     img{
-      width: 607px;
-      height: 482px;
+      width: 138.8px;
+      height: 240px;
     }
     margin-bottom: 100px;
   }
  }
  .info-5{
-  padding: 135px 0 85px;
+  padding: 50px 0 85px;
   background: $blue;
   text-align: center;
   &__inner{
@@ -499,6 +563,12 @@ p{
   padding-top: 100px;
   text-align: center;
   padding-bottom: 300px;
+  &__copy{
+    margin-top: 100px;
+    color: gray;
+    font-size: 12px;
+    text-align: left;
+  }
   h2.span{ 
     margin-top: 30px;
     font-size: 40px;
@@ -509,8 +579,8 @@ p{
   }
   &__img{
     img{
-      width: 100px;
-      height: 177.9px;
+      width: 483.6px;
+      height: 190px; 
       object-fit: contain;
     }
   }
@@ -546,6 +616,14 @@ p{
     }
   }
  }
+ .squirrel_right{
+  position: absolute;
+  right: 250px !important;
+  bottom: 100px;
+  img{
+    height: 200px;
+  }
+ }
  .bck{
   position: absolute;
   left: 0;
@@ -555,6 +633,15 @@ p{
   background: url('../images/bcg.png')no-repeat center;
   background-size: cover;
   pointer-events:none;
+  &.top-1{
+    background-position: 1000px;
+  }
+  &.top-2{
+    background-position: 1000px;
+  }
+ }
+ .fp-section{
+  z-index: 100;
  }
  .copy{
   position: fixed;
@@ -563,17 +650,16 @@ p{
   font-size: 12px;
   font-family: 'Roboto-Regular';
   color: #3c3c3c;
-  pointer-events:none; 
-  opacity: 0.5;
+  pointer-events:none;
  }
  .textUp{
     opacity: 0;
  }
  .blockUp{
   transition:2s all;
-  transform:translate3d(0,150px,0);
+  // transform:translate3d(0,150px,0);
   &.active{
-  transform:translate3d(0,0px,0);
+  transform:translate3d(0,0px,0); 
   }
  }
  .upHide{
@@ -585,6 +671,9 @@ p{
  }
 }
 @media screen and (max-width: 992px){
+  .squirrel_right{
+    display: none;
+  }
   .info-1{
     .container{
       width: 100%;
@@ -604,7 +693,7 @@ p{
     width: 150px;
     height: 225.9px;
     padding-top: 90px;
-    &:hover{
+    &.active{
       padding-top: 40px;
     }
     h3{
@@ -625,7 +714,7 @@ p{
     width: 150px;
     height: 225.9px;
     padding-top: 90px;
-    &:hover{
+    &.active{
       padding-top: 40px;
     }
     h3{
@@ -647,7 +736,7 @@ p{
     height: 150px;
     top: 150px;
     padding-top: 50px;
-    &:hover{
+    &.active{
       padding-top: 20px;
     }
     h3{
@@ -725,8 +814,8 @@ p{
     margin-top: 100px;
   }
   .info-4__img img{
-     width: 260px;
-     height: 219.9px;
+    width: 75.2px;
+    height: 130px;
   }
 
    .info-5{
@@ -786,8 +875,9 @@ p{
     padding-bottom: 70px;
   }
   .info-6__img img{
-    width: 60px;
-    height: 106.7px;
+    width: 280px;
+  height: 98.6px;
+  margin-bottom: 0;
   }
   .info-6 h2.span{
     font-size: 20px;
@@ -796,7 +886,29 @@ p{
   .info-6 span{
     margin-bottom: 50px;
   }
-  .copy{
-    display: none;
+}
+.owl-carousel .owl-item img{
+  width: auto;
+  display: inline-block;
+}
+@media screen and (max-height: 825px){
+  .header__text p{
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  h1{
+    font-size: 65px;
+  }
+}
+@media screen and (max-height: 750px){
+  .info-3__img{
+    margin-top: 0;
+  }
+  .header__text p{
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  h1{
+    font-size: 65px;
   }
 }
