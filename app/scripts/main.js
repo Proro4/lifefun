@@ -3,7 +3,8 @@ $(document).ready(function() {
         //options here
         autoScrolling:true,
         scrollHorizontally: true,
-        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+        anchors:['first', 'two', 'three','four','five','six']
     });
     $('.tell-slider').owlCarousel({
         items:1,
@@ -18,7 +19,9 @@ $(document).ready(function() {
         items:1,
         URLhashListener:true,
         startPosition: 'URLHash',
-        dots:false
+        dots:false,
+        touchDrag:false,
+        mouseDrag:false
     });
 
     $('.info-1__circle__1').hover(function(){
@@ -42,5 +45,11 @@ $(document).ready(function() {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 800);
     });
+    let windWidth = $(window).width();
+    $('.info-2__slider').css('width',windWidth);
 
 });
+$(window).resize(function(){
+    let windWidth = $(window).width();
+    $('.info-2__slider').css('width',windWidth);
+})
