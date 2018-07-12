@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: SketchAPI 5.1.316 <https://api.sketch.io/> -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" style="" sketchjs:metadata="eyJ0aXRsZSI6Ijg2MTA1ODlkLTA5YjAtNDczZi04MmUyLTczYTcwZTM5ZTljYyIsImRlc2NyaXB0aW9uIjoiTWFkZSB3aXRoIFNrZXRjaHBhZCAtIGh0dHBzOi8vc2tldGNoLmlvL3NrZXRjaHBhZCIsIm1ldGFkYXRhIjp7fSwiY2xpcFBhdGgiOnsiZW5hYmxlZCI6dHJ1ZSwic3R5bGUiOnsic3Ryb2tlU3R5bGUiOiJibGFjayIsImxpbmVXaWR0aCI6MX19LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjMxMywiaGVpZ2h0Ijo0NzEsInBhZ2VzIjp7Imxlbmd0aCI6MSwiZGF0YSI6W3sid2lkdGgiOjMxMywiaGVpZ2h0Ijo0NzF9XX19" width="313" height="471" viewBox="0 0 313 471" sketchjs:version="5.1.316">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" style="" sketchjs:metadata="eyJ0aXRsZSI6Ijg2MTA1ODlkLTA5YjAtNDczZi04MmUyLTczYTcwZTM5ZTljYyIsImRlc2NyaXB0aW9uIjoiTWFkZSB3aXRoIFNrZXRjaHBhZCAtIGh0dHBzOi8vc2tldGNoLmlvL3NrZXRjaHBhZCIsIm1ldGFkYXRhIjp7fSwiY2xpcFBhdGgiOnsiZW5hYmxlZCI6dHJ1ZSwic3R5bGUiOnsic3Ryb2tlU3R5bGUiOiJibGFjayIsImxpbmVXaWR0aCI6MX19LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjMxMywiaGVpZ2h0Ijo0NzEsInBhZ2VzIjp7Imxlbmd0aCI6MSwiZGF0YSI6W3sid2lkdGgiOjMxMywiaGVpZ2h0Ijo0NzF9XX19" width="313" height="469" viewBox="0 0 313 471" sketchjs:version="5.1.316">
 <defs>
 	<linearGradient x1="290.68883707497264" y1="0" x2="290.68883707497264" y2="581.3776741499453" id="dna_586829354" gradientUnits="userSpaceOnUse">
-		<stop offset="0.169" style="stop-color:#77efd8;"/>
-		<stop offset="1" style="stop-color:#45b9f1;"/>
-	</linearGradient>
+		
+		<stop offset="0.169" style="stop-color:#b482d3;"/>
+		<stop offset="0.583" style="stop-color:#b482d3;"/>
+		<stop offset="1" style="stop-color:#a2abf0;"/>
+	</linearGradient> 
 </defs>
 <g sketchjs:tool="clipart" style="mix-blend-mode: source-over;" transform="matrix(1,0,0,1,-424,-214)">
 	<path d="M0 0 L1680 0 1680 944 0 944 z" sketchjs:tool="rectangle" sketchjs:uid="1" style="fill: tranparent; fill-rule: nonzero; fill-opacity: 0; vector-effect: non-scaling-stroke;"/>

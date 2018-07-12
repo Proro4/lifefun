@@ -47,7 +47,14 @@ $(document).ready(function() {
     });
     let windWidth = $(window).width();
     $('.info-2__slider').css('width',windWidth);
-
+    $('.info-2__slider__but li a').on('click',function (e) {
+        $('.info-2__slider__but li').removeClass('active');
+        $(this).parent().addClass('active');
+    })
+    $('.info-2__slider__but a').on('click',function () {
+        $('.info-2__slider__but li').removeClass('active');
+        $(this).parent().addClass('active');
+    })
 });
 $(window).resize(function(){
     let windWidth = $(window).width();
