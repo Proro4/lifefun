@@ -60,3 +60,11 @@ $(window).resize(function(){
     let windWidth = $(window).width();
     $('.info-2__slider').css('width',windWidth);
 })
+// //preloader
+$(window).on('load', function () {
+    var preloader = $('.loaderArea');
+    var loader = preloader.find('.loader');
+    loader.delay(2000).fadeOut();
+    preloader.delay(2000).fadeOut('slow');
+
+});

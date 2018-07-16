@@ -54,7 +54,7 @@ html,body{
   padding: 0;
 }
 body{
-}
+}.info-3__inner
 h1{
   font-size: 37px;
   line-height: 40px;
@@ -89,6 +89,37 @@ p{
   line-height: 24px;
 }
 
+.loaderArea {
+  background: white;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 100000;
+}
+.loader {
+  background: url("../images/logoload.svg")no-repeat center;
+  height: 150px;
+  width: 150px;
+  background-size: 150px;
+  animation: loader 1.5s infinite;
+}
+@keyframes loader{
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+  50%{
+    transform: rotate(360deg) scale(0.0);
+  }
+  100%{
+    transform: rotate(720deg) scale(1);
+  }
+}
 .butt{
   font-family: 'Roboto-Medium';
   text-transform: uppercase;
@@ -570,10 +601,11 @@ p{
   align-items: center;
   justify-content: center;
   &__inner{
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
   h2{
     text-align: center;
@@ -1046,8 +1078,14 @@ p{
   .squirrel_9{
     height:85px;
   }
+  .header__info__text p{
+    margin-top: 25px;
+  }
 }
 @media screen and (max-width: 440px){
+  p{
+    line-height: 1.2;
+  }
   h2{
     font-size: 23px;
     margin-top: 5px;
